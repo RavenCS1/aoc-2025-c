@@ -27,9 +27,10 @@ mkdir build && cd build
 cmake ..
 make
 ./solution_1
+```
 
 ## Input Files
-⚠️ IMPORTANT: Constants in .h files (NUMBER_OF_ALL_STRINGS, etc.) are optimized for MY input data (AoC rules prohibit sharing puzzle inputs).
+IMPORTANT: Constants in .h files (NUMBER_OF_ALL_STRINGS, etc.) are optimized for MY input data (AoC rules prohibit sharing puzzle inputs).
 
 Users MUST:
 
