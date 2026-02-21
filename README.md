@@ -11,11 +11,11 @@ Advent of Code 2025 solutions in clean C.
 ## Structure
 aoc-2025-c/
 - Day_01/
--Problem_1/ # Part 1 solution
--Problem_2/ # Part 2 solution
+ **-** Problem_1/ # Part 1 solution
+ **-** Problem_2/ # Part 2 solution
 - Day_02/
 - Day_03/
--Problem_1/ # Part 1 ONLY (WIP)
+ **-** Problem_1/ # Part 1 ONLY (WIP)
 
 
 ## Build & Run
