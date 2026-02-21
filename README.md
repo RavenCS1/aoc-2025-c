@@ -10,12 +10,12 @@ Advent of Code 2025 solutions in clean C.
 
 ## Structure
 aoc-2025-c/
--Day_01/
- -Problem_1/ # Part 1 solution
-  -Problem_2/ # Part 2 solution
-├── Day_02/
-└── Day_03/
-└── Problem_1/ # Part 1 ONLY (WIP)
+- Day_01/
+-Problem_1/ # Part 1 solution
+-Problem_2/ # Part 2 solution
+- Day_02/
+- Day_03/
+-Problem_1/ # Part 1 ONLY (WIP)
 
 
 ## Build & Run
@@ -31,6 +31,7 @@ make
 
 ## Input Files
 IMPORTANT:
+
 Constants in .h files (NUMBER_OF_ALL_STRINGS, etc.) are optimized for MY input data (AoC rules prohibit sharing puzzle inputs).
 
 Users MUST:
@@ -43,9 +44,8 @@ Adjust constants in problem_X.h for your input size
 
 Rebuild
 
-text
 Problem_1/
-├── main.c
-├── my_puzzle_input.txt     ← YOUR private input
-├── include/problem_1.h     ← Adjust NUMBER_OF_ALL_STRINGS
-└── src/problem_1.c
+- main.c
+- my_puzzle_input.txt     ← YOUR private input
+- include/problem_1.h     ← Adjust NUMBER_OF_ALL_STRINGS
+- src/problem_1.c
