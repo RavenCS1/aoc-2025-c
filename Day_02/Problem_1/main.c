@@ -8,17 +8,17 @@ int main(void){
         exit(EXIT_FAILURE);
     }
 
-    char line[MAX_BUFFER_SIZE] = {0};
+    char line[MAX_BUFFER_SIZE] = {};
     if(!fgets(line, sizeof(line), input)){
         fclose(input);
         return EXIT_FAILURE;
     }
     fclose(input);
 
-    needed_type tab[NUMBER_OF_ALL_STRINGS] = {0};
+    needed_type tab[NUMBER_OF_ALL_STRINGS] = {};
 
-    int position = 0;
-    char *ptr = strtok(line, ",-");
+    register int position = 0;
+    char* ptr = strtok(line, ",-");
     tab[position++] = atol(ptr);
 
     while(ptr){
@@ -27,17 +27,20 @@ int main(void){
             tab[position++] = atol(ptr);
     }
 
-    needed_type start = 0;
-    needed_type end = 0;
-    needed_type first_half = 0;
-    needed_type second_half = 0;
-    result_type result = 0;
-    needed_type number_of_digits = 0;
+    needed_type start = {};
+    needed_type end = {};
+    needed_type first_half = {};
+    needed_type second_half = {};
+    result_type result = {};
+    needed_type number_of_digits = {};
   
     for(size_t i = 0; i < NUMBER_OF_ALL_STRINGS; i += 2){
-        start = tab[i]; end = tab[i + 1];
+        start = tab[i];
+        end = tab[i + 1];
+
         for(; start <= end; ++start){
             number_of_digits = count_digits(start);
+
             if(number_of_digits % 2 == 0){
                 number_split_without_middle(start, &first_half, &second_half);
                 if(first_half == second_half){
@@ -47,7 +50,7 @@ int main(void){
         }
     }
 
-    printf("Result %lld\n", result);
+    (void) printf("Result %lld\n", result);
     
     return EXIT_SUCCESS;
 }

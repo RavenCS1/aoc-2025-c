@@ -1,0 +1,3 @@
+/home/raven/Github/aoc-2025-c/Day_03/Problem_2/build/CMakeFiles/solution_2.dir
+/home/raven/Github/aoc-2025-c/Day_03/Problem_2/build/CMakeFiles/edit_cache.dir
+/home/raven/Github/aoc-2025-c/Day_03/Problem_2/build/CMakeFiles/rebuild_cache.dir

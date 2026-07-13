@@ -7,10 +7,10 @@
 #include <limits.h>
 #include <math.h>
 
-#define MAX_LEN ((int) 10)
-#define NUMBER_OF_ALL_STRINGS ((int) 66)
-#define NUMBER_OF_ALL_RANGES ((int) NUMBER_OF_ALL_STRINGS / 2)
-#define MAX_BUFFER_SIZE ((int) 477) // 476 + 1
+constexpr int MAX_LEN = 10;
+constexpr int NUMBER_OF_ALL_STRINGS = 66;
+constexpr int NUMBER_OF_ALL_RANGES = NUMBER_OF_ALL_STRINGS / 2;
+constexpr int MAX_BUFFER_SIZE = 477; // 476 + 1
 
 typedef long needed_type;
 typedef long long result_type;

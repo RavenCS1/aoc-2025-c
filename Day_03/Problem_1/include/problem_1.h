@@ -5,9 +5,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_LENGTH_OF_LINE ((int) 102) // 101 + 1
-#define NUMBER_OF_LINES ((int) 200)
+constexpr int MAX_LENGTH_OF_LINE = 102; // 101 + 1
+constexpr int NUMBER_OF_LINES = 200;
 
-int counting_lines(FILE*);
+int counting_lines(FILE [restrict const static 1]);
 
 #endif

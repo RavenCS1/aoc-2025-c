@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_LENGTH_OF_LINE ((int) 6) // 5 + 1
+constexpr int MAX_LENGTH_OF_LINE  = 6; // 5 + 1
 
-int counting_lines(FILE*);
+int counting_lines(FILE [restrict const static 1]);
 
 #endif

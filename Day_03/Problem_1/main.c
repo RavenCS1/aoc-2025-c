@@ -8,33 +8,35 @@ int main(void){
         exit(EXIT_FAILURE);
     }
 
-    int result = 0;
-    int first = 0;
-    int second = 0;
-    int read = 0;
+    register int result = {};
+    register int first = {};
+    register int second = {};
+    register int read = {};
 
-    size_t len = 0;
-    char buffer[MAX_LENGTH_OF_LINE];
+    register size_t len = {};
+    char buffer[MAX_LENGTH_OF_LINE] = {};
 
     while(fgets(buffer, sizeof(buffer), input)){
         len = strlen(buffer);
         first = buffer[0] - '0';
         second = buffer[1] - '0';
+
         for(size_t i = 1; i < len - 1; ++i){
             if(first < (buffer[i] - '0') && (i + 2 != len)){
                 first = buffer[i] - '0';
                 second = buffer[i + 1] - '0';
-            }
-            else if(first < (buffer[i] - '0') && (i + 2 == len))
+            } else if(first < (buffer[i] - '0') && (i + 2 == len))
                 second = buffer[i] - '0';
-            else if(second < (buffer[i] - '0'))
+              else if(second < (buffer[i] - '0'))
                 second = buffer[i] - '0';
         }
+
         read = first * 10 + second * 1;
         result += read;
     }
 
-    printf("Result: %d\n", result);
+    (void) printf("Result: %d\n", result);
+    
     fclose(input);
     
     return EXIT_SUCCESS;
