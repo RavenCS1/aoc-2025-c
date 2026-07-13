@@ -8,9 +8,9 @@ set(CMAKE_C_EXTENSIONS OFF)
 include_directories(include)
 file(GLOB SOURCES "src/*.c")
 
-add_executable(solution_1 main.c ${SOURCES})
+add_executable(solution_01 main.c ${SOURCES})
 
-target_link_libraries(solution_1 m)
+target_link_libraries(solution_01 m)
 
 set(CMAKE_C_FLAGS_DEBUG "-std=c2x -g -O0")
 set(CMAKE_C_FLAGS_01 "-std=c2x -O1 -Wall")
